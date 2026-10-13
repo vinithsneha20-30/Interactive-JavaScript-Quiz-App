@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>JavaScript Quiz</h1>
+        
+        <!-- Quiz Section -->
+        <div id="quiz-box">
+            <div id="score-tracker">Score: <span id="current-score">0</span></div>
+            <div id="question-container">
+                <!-- Question and options will be rendered here dynamically -->
+            </div>
+            <div id="feedback-container"></div>
+            <button id="next-btn" class="btn" disabled>Next Question</button>
+        </div>
+
+        <!-- Final Score Screen (Hidden by default) -->
+        <div id="result-box" class="hidden">
+            <h2>Quiz Complete!</h2>
+            <p id="final-score-text"></p>
+            <button id="restart-btn" class="btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
